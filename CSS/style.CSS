@@ -3,26 +3,39 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'mad_hackeritalic';
+    src: 
+    
+    url(/fonts/Mad\ Hacker.ttf);
+    
+    
+    font-style: normal;
+
+}
 body{
     margin: 0px;
     padding: 0px;
     background-color: #111216;
 }
 .cabecalho{
+   
+   
     display: flex;
     background-color:#333131 ;
     color:#B5D12A;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
     height: 100px;
     align-items: center;
-
+    
+}
+.menu, .titulomodal{
+    font-family: 'mad_hackeritalic';
+    font-size: 30pt;
 }
 
-li{
-    list-style: none;
-    display: inline-block;
-    margin-left:20px;
-
-}
 
 .marcasrunter{
     display: flex;
@@ -162,7 +175,8 @@ footer{
     align-items:center ;
     
 }
-.sobresimuladores{
+.sobreEmuladores{
+    
     margin-left: 10px;
 }
 .listamodelo{
