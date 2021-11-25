@@ -245,3 +245,22 @@ footer{
         right: 0px;
     }
 }
+
+@media(max-width:800px){
+    .cabecalho figure{
+        display: none;
+    }
+    .menu p{
+        font-size: 70%;
+    }
+    .link{
+        width: 80%;
+        
+    }
+    .titulomodal{
+        font-size: 15pt;
+    }
+    .modal{
+        height: 850px;
+    }
+}
