@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
 *{
     box-sizing: border-box;
+  
 }
 
 @font-face {
@@ -80,6 +81,7 @@ img{
 }
 footer{
     position: relative;
+
     background-color: #333131;
     width: 100%;
     height: 250px;
@@ -90,58 +92,54 @@ footer{
 .logobaixo {
     position: absolute;
     width: 30%;
-    left: -8%;
     top:0;  
    
  
 }
-
+.areaauto{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    justify-content: center;
+    position: relative;
+    float: right;
+    right: 200px;
+    
+}
 .contato{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 0px;
 }
-.redeslogo{
-    margin: 0px;
-}
-.redeslogo img{    
-    top:10px;
-    width: 50px;
-    margin-right:50px ;
-    filter: grayscale(90%);
-    cursor: pointer;
-
-}
-.redeslogo img:hover{
-    transition: 0.5s;
-    filter: grayscale(0%);
-    margin-right: 51px;
-}
 
 .copy{
     display: flex;
+    flex-direction: row;
     color: white;
     align-items: center;
+    margin: 0px;
+    padding: 0px;
 
 
 
 }
 .auto{
-    
+    margin: 0px;
     padding: 0px;
-    margin-top: 10px;
     font-size: 10px;
     font-family: 'Lato', sans-serif;
     letter-spacing: 10px;
     
 
 }
+
 .sobre{
-    color: white;
+    
     padding: 0px;
-    margin: 0px;
-    width: 200px;
+    color: white;
+    width: 250px;
 }
 .modal{
     position: absolute;
@@ -212,4 +210,38 @@ footer{
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
+}
+@media (max-width: 1024px) {
+    .marcasrunter{
+        min-width: 50%;
+        height: 150px;
+    }   
+    .marca{
+      
+        width: 400px;
+        
+      
+    }
+    .link{
+        display: flex;
+        flex-wrap: nowrap;
+        
+    }
+
+    .modal{
+        
+        left: 5%;
+        width: 90%;
+        
+    }
+
+    .logobaixo{
+        display: none;
+    }
+    .areaauto{
+        transition: 1s;
+        align-items:center ;
+        float: none;
+        right: 0px;
+    }
 }
