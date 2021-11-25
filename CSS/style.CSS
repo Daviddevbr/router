@@ -261,6 +261,7 @@ footer{
         font-size: 15pt;
     }
     .modal{
+        overflow: scroll;
         height: 850px;
     }
 }
